@@ -134,6 +134,7 @@ export class DiscordBotModule extends ModuleBase {
             type: 10,
             content: [
               `${rankEmoji} **${gp.accuracy.toFixed(2)}%** (${formatter.format(gp.score)} score) ${message.menu.mods.num > 0 ? `**+${message.menu.mods.str}**` : ""}`,
+              `**${gp.pp.current}pp**/${gp.pp.fc} (${gp.pp.maxThisPlay} max)`
             ].join("\n")
           },
           ...handDataSection,
